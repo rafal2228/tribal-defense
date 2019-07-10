@@ -1,0 +1,209 @@
+{
+  "frames": {
+    "orc_000.png": {
+      "frame": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_001.png": {
+      "frame": { "x": 82, "y": 0, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_002.png": {
+      "frame": { "x": 164, "y": 0, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_003.png": {
+      "frame": { "x": 246, "y": 0, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_004.png": {
+      "frame": { "x": 328, "y": 0, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_005.png": {
+      "frame": { "x": 410, "y": 0, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_006.png": {
+      "frame": { "x": 0, "y": 128, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_007.png": {
+      "frame": { "x": 81, "y": 128, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_008.png": {
+      "frame": { "x": 162, "y": 128, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_009.png": {
+      "frame": { "x": 243, "y": 128, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_010.png": {
+      "frame": { "x": 324, "y": 128, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_011.png": {
+      "frame": { "x": 405, "y": 128, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_012.png": {
+      "frame": { "x": 0, "y": 256, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_013.png": {
+      "frame": { "x": 82, "y": 256, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_014.png": {
+      "frame": { "x": 164, "y": 256, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_015.png": {
+      "frame": { "x": 246, "y": 256, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_016.png": {
+      "frame": { "x": 328, "y": 256, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_017.png": {
+      "frame": { "x": 409, "y": 256, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_018.png": {
+      "frame": { "x": 0, "y": 384, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_019.png": {
+      "frame": { "x": 81, "y": 384, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_020.png": {
+      "frame": { "x": 162, "y": 384, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_021.png": {
+      "frame": { "x": 243, "y": 384, "w": 81, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 81, "h": 128 },
+      "sourceSize": { "w": 81, "h": 128 }
+    },
+    "orc_022.png": {
+      "frame": { "x": 324, "y": 384, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    },
+    "orc_023.png": {
+      "frame": { "x": 406, "y": 384, "w": 82, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 128 },
+      "sourceSize": { "w": 82, "h": 128 }
+    }
+  },
+  "animations": {
+    "orc": [
+      "orc_000.png",
+      "orc_001.png",
+      "orc_002.png",
+      "orc_003.png",
+      "orc_004.png",
+      "orc_005.png",
+      "orc_006.png",
+      "orc_007.png",
+      "orc_008.png",
+      "orc_009.png",
+      "orc_010.png",
+      "orc_011.png",
+      "orc_012.png",
+      "orc_013.png",
+      "orc_014.png",
+      "orc_015.png",
+      "orc_016.png",
+      "orc_017.png",
+      "orc_018.png",
+      "orc_019.png",
+      "orc_020.png",
+      "orc_021.png",
+      "orc_022.png",
+      "orc_023.png"
+    ]
+  },
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version": "1.0",
+    "image": "orc.png",
+    "format": "RGBA8888",
+    "size": { "w": 491, "h": 512 },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:f8f28f6a76c69f52e1958887fc2d911a:8335ea407974e4960ad9d98ad8c05560:8d2f034a042f5e42d835b3511e9c1732$"
+  }
+}
