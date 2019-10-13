@@ -1,7 +1,8 @@
-import { Application, AnimatedSprite } from 'pixi.js';
+import { Application, Point } from 'pixi.js';
+import { ORC_RESOURCE_URL } from './constants';
+import { Orc } from './orc';
 
 const app = new Application();
-const ORC_RESOURCE_URL = 'assets/orc.json';
 app.loader.add(ORC_RESOURCE_URL).load(setup);
 app.ticker.add(gameLoop);
 
@@ -11,28 +12,25 @@ document.body.style.padding = '0';
 document.body.style.margin = '0';
 document.body.appendChild(app.view);
 
-let orc: AnimatedSprite;
+let orc: Orc;
 
 function setup() {
-  const orcSheet = app.loader.resources[ORC_RESOURCE_URL];
+  orc = new Orc(app, [
+    new Point(70, 70),
+    new Point(100, 70),
+    new Point(200, 135),
+    new Point(300, 70),
+    new Point(400, 70),
+    new Point(400, 400),
+    new Point(70, 70)
+  ]);
+  orc.startWalking();
 
-  if (!orcSheet || !orcSheet.spritesheet) {
-    return;
-  }
-
-  const orcAnimationKeyframes = [
-    ...orcSheet.spritesheet.animations['orc'],
-    ...orcSheet.spritesheet.animations['orc'].reverse()
-  ];
-  orc = new AnimatedSprite(orcAnimationKeyframes);
-  orc.animationSpeed = 0.2;
-  orc.loop = true;
-  orc.play();
-  app.stage.addChild(orc);
+  app.stage.addChild(orc.sprite);
 }
 
 function gameLoop() {
-  if (orc && orc.position.x < window.innerWidth - 100) {
-    orc.position.set(orc.x + 5, 0);
+  if (orc) {
+    orc.update();
   }
 }
