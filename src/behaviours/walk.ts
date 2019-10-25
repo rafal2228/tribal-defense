@@ -1,63 +1,41 @@
-import { Application, AnimatedSprite, Point } from 'pixi.js';
-import { ORC_RESOURCE_URL, MonsterState } from './constants';
+import { AnimatedSprite, Point } from 'pixi.js';
+import { Behaviour } from './behaviour';
+import { StandBehaviour } from './stand';
 
-export class Orc {
-  sprite: AnimatedSprite;
-  maxSpeed = 10;
-  speed = 2;
-  states: Set<MonsterState> = new Set();
+export class WalkBehaviour implements Behaviour {
   currentTargetIndex?: number;
+  sprite: AnimatedSprite;
   journey: Point[];
+  speed: number;
 
-  constructor(app: Application, journey: Point[] = []) {
-    const orcSheet = app.loader.resources[ORC_RESOURCE_URL];
+  constructor(journey: Point[], sprite: AnimatedSprite, speed: number) {
     this.journey = journey;
-
-    const orcAnimationKeyframes = [
-      ...(orcSheet.spritesheet && orcSheet.spritesheet.animations['orc']),
-      ...(orcSheet.spritesheet &&
-        orcSheet.spritesheet.animations['orc'].reverse())
-    ];
-
-    this.sprite = new AnimatedSprite(orcAnimationKeyframes);
-    this.sprite.animationSpeed = 0.2;
-    this.sprite.loop = true;
-    this.sprite.anchor.set(0.5, 0.5);
-
-    this.sprite.position.copyFrom(journey[0]);
-    this.states.add(MonsterState.Idle);
+    this.sprite = sprite;
+    this.speed = speed;
   }
 
-  update() {
-    if (this.states.has(MonsterState.Walking)) {
-      this.walk();
-    }
-  }
-
-  startWalking() {
+  init() {
     if (this.journey.length < 1) {
       return;
     }
 
-    this.states.delete(MonsterState.Idle);
-    this.states.add(MonsterState.Walking);
     this.currentTargetIndex = 0;
     this.sprite.play();
   }
 
-  walk() {
+  update() {
     if (typeof this.currentTargetIndex !== 'number') {
-      return;
+      return new StandBehaviour();
     }
 
     if (this.currentTargetIndex === this.journey.length) {
-      this.states.delete(MonsterState.Walking);
+      return new StandBehaviour();
     }
 
     const currentTarget = this.journey[this.currentTargetIndex];
 
     if (!currentTarget) {
-      return;
+      return new StandBehaviour();
     }
 
     const { x: targetX, y: targetY } = currentTarget;
@@ -65,7 +43,8 @@ export class Orc {
 
     if (targetX === x && targetY === y) {
       this.currentTargetIndex++;
-      return;
+
+      return null;
     }
 
     const directionX = targetX < x ? -1 : 1;
@@ -80,7 +59,7 @@ export class Orc {
         directionX
       );
 
-      return;
+      return null;
     }
 
     if (targetY === y) {
@@ -92,7 +71,7 @@ export class Orc {
         directionX
       );
 
-      return;
+      return null;
     }
 
     const maxX = Math.abs(x - targetX);
@@ -101,7 +80,7 @@ export class Orc {
 
     if (maxPath < this.speed) {
       this.sprite.setTransform(targetX, targetY, directionX);
-      return;
+      return null;
     }
 
     const pathSqrt = Math.pow(this.speed, 2);
@@ -115,5 +94,11 @@ export class Orc {
       this.sprite.y + changeY * directionY,
       directionX
     );
+
+    return null;
+  }
+
+  dispose() {
+    this.sprite.gotoAndStop(0);
   }
 }
